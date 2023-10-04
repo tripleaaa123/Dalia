@@ -7077,6 +7077,25 @@ textarea {
 }
 
 /*	All kind Of btns Styles  */
+.formButton{
+  border-radius: 0px;
+  display: inline-block;
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  letter-spacing: 0em;
+  padding: 13px 35px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
 .ud-btn {
   border-radius: 4px;
   display: inline-block;
@@ -7101,7 +7120,7 @@ textarea {
   font-size: 16px;
   transform: rotate(-45deg);
 }
-.ud-btn:hover, .ud-btn:focus, .ud-btn:active {
+.ud-btn:hover, .ud-btn:focus, .ud-btn:active, .formButton {
   outline: none;
   box-shadow: none;
 }
@@ -7186,8 +7205,9 @@ textarea {
 .btn-white:before,
 .btn-light-gray:before,
 .btn-transparent:before,
+.formButton,
 .btn-transparent2:before {
-  background-color: #5BBB7B;
+  background-color: #ed07c3;
   content: "";
   height: 100%;
   left: -100%;
@@ -7225,6 +7245,7 @@ textarea {
 .btn-white:hover,
 .btn-light-gray:hover,
 .btn-transparent:hover,
+.formButton,
 .btn-transparent2:hover {
   color: #ffffff;
 }
@@ -7243,6 +7264,7 @@ textarea {
 .btn-white:hover:before,
 .btn-light-gray:hover:before,
 .btn-transparent:hover:before,
+.formButton,
 .btn-transparent2:hover:before {
   height: 100%;
   width: 200%;
@@ -7259,8 +7281,13 @@ textarea {
 }
 
 .btn-dark:hover {
-  background-color: #5BBB7B;
-  border: 1px solid #5BBB7B;
+  background-color: #ed07c3;
+  border: 1px solid #ed07c3;
+}
+
+.formButton:hover{
+  background-color: #ed07c3;
+  border: 1px solid #ed07c3;
 }
 
 .btn-thm-border {
