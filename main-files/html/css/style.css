@@ -10812,6 +10812,7 @@ input:focus-visible {
 
 .banner-title {
   color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 45px;
   font-family: var(--title-font-family);
   line-height: 60px;
