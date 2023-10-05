@@ -7078,7 +7078,7 @@ textarea {
 
 /*	All kind Of btns Styles  */
 .formButton{
-  border-radius: 0px;
+  border-radius: 4px;
   display: inline-block;
   font-family: var(--title-font-family);
   font-weight: 700;
@@ -7087,7 +7087,7 @@ textarea {
   letter-spacing: 0em;
   padding: 13px 35px;
   position: relative;
-  overflow: hidden;
+  overflow: hidden !important;
   text-align: center;
   z-index: 0;
   -webkit-transition: all 0.4s ease;
@@ -7095,6 +7095,9 @@ textarea {
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+
+  border: 1px solid #ed07c3; /* Adjust the color as needed */
+  color: #fff;
 }
 .ud-btn {
   border-radius: 4px;
@@ -7120,7 +7123,7 @@ textarea {
   font-size: 16px;
   transform: rotate(-45deg);
 }
-.ud-btn:hover, .ud-btn:focus, .ud-btn:active, .formButton {
+.ud-btn:hover, .ud-btn:focus, .ud-btn:active {
   outline: none;
   box-shadow: none;
 }
@@ -7205,12 +7208,12 @@ textarea {
 .btn-white:before,
 .btn-light-gray:before,
 .btn-transparent:before,
-.formButton,
 .btn-transparent2:before {
   background-color: #ed07c3;
   content: "";
   height: 100%;
   left: -100%;
+  overflow: hidden !important;
   position: absolute;
   top: 0;
   width: 0;
@@ -7230,6 +7233,34 @@ textarea {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+/*
+.formButton:before{
+
+    background-color: #ed07c3;
+    content: "";
+    height: 100%;
+    left: 10;
+    overflow: hidden !important;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: -1;
+    -webkit-transform: skew(50deg);
+    -moz-transform: skew(50deg);
+    -o-transform: skew(50deg);
+    transform: skew(50deg);
+    -webkit-transition: width 0.6s;
+    -moz-transition: width 0.6s;
+    -o-transition: width 0.6s;
+    transition: width 0.6s;
+    transform-origin: top left;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  */
 .ud-btn:hover,
 .btn-gray:hover,
 .btn-dark:hover,
@@ -7245,7 +7276,7 @@ textarea {
 .btn-white:hover,
 .btn-light-gray:hover,
 .btn-transparent:hover,
-.formButton,
+.formButton:hover,
 .btn-transparent2:hover {
   color: #ffffff;
 }
@@ -7264,11 +7295,12 @@ textarea {
 .btn-white:hover:before,
 .btn-light-gray:hover:before,
 .btn-transparent:hover:before,
-.formButton,
+.formButton:hover:before,
 .btn-transparent2:hover:before {
   height: 100%;
   width: 200%;
 }
+
 
 .btn-gray {
   background-color: #f7f7f7;
@@ -7286,8 +7318,11 @@ textarea {
 }
 
 .formButton:hover{
-  background-color: #ed07c3;
-  border: 1px solid #ed07c3;
+  background-color: #ed07c3 !important; 
+  border: 1px solid #ed07c3 !important;
+  background-color: #ed07c3; /* Adjust the color as needed */
+  border: 1px solid #ed07c3; /* Adjust the color as needed */
+  color: #ffffff;
 }
 
 .btn-thm-border {
@@ -7371,7 +7406,7 @@ textarea {
   border: 2px solid var(--headings-color);
 }
 .btn-white2:before {
-  background-color: #222222;
+  background-color: #ed07c3;
 }
 .btn-white2:hover {
   border: 2px solid #222222;
@@ -7412,7 +7447,7 @@ textarea {
   padding: 5px 30px;
 }
 .add-joining:hover {
-  color: #ffffff;
+  color: white;
 }
 .add-joining.at-home10 {
   border-width: 2px;
